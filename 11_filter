@@ -1,0 +1,20 @@
+# 参数去空
+print("参数去空")
+def not_empty(str):
+    return str and str.strip()
+
+
+result = filter(not_empty, ['', 'A', 'B B', None])
+for x in result:
+    print(x)
+
+
+# 删除1~100内的数字
+print("删除1~100内的数字")
+def do_filter(value):
+    return value > 100 or value < 1
+
+
+result = filter(do_filter, [-120,-100,-80,10,20,80,100,104])
+for x in result:
+    print(x)

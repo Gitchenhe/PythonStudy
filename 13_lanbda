@@ -1,0 +1,5 @@
+# 两个入参,计算积
+value = map(lambda x, y: x * y, [4, 9], [2, 4])
+
+for x in value:
+    print(x)
